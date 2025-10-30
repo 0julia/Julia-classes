@@ -1,0 +1,7 @@
+#include <iostream>
+#include "parent.h"
+
+using namespace std;
+
+movie::movie(){
+}
