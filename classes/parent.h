@@ -7,8 +7,8 @@ using namespace std;
 class parent {
  public:
   parent();
-  int anum;
-  int printInfo();
+  char anum[50];
+  const char* printInfo();
   // private:
 
 };

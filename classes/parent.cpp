@@ -6,11 +6,10 @@ using namespace std;
 
 parent::parent()
 {
-  parent();
-  int anum = 535;
+  strcpy(anum, "535");
 }
 
-int parent::printInfo(){
+const char* parent::printInfo(){
   cout << "I dunno how to do this";
   return anum;
 }
