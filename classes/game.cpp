@@ -1,7 +1,8 @@
 #include <iostream>
 #include "parent.h"
+#include "game.h"
 
 using namespace std;
 
-child::child(){
+game::game(){
 }

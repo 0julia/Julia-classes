@@ -1,0 +1,8 @@
+# <iostream>
+using namespace std;
+
+int main()
+{
+  cout << "Welcome to the file!";
+  return 0;
+}

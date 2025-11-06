@@ -1,12 +1,14 @@
 # include <iostream>
 # include <cstring>
+# pragma once
 
 using namespace std;
 
-class Parent {
+class parent {
  public:
-  Parent();
-
- private:
+  parent();
+  int anum;
+  int printInfo();
+  // private:
 
 };
