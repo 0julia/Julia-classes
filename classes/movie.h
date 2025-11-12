@@ -12,6 +12,6 @@ class movie : public parent {
   char director[80];
   int year;
   int duration; // or float?
-  int rating;
+  float rating;
   void printInfo();
 };

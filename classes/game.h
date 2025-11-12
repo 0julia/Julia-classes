@@ -10,7 +10,7 @@ class game : public parent {
   char title[80];
   int year;
   char publisher[80];
-  int rating[80];
+  float rating;
 
  protected:
 

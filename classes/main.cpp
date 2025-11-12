@@ -1,4 +1,5 @@
 # include <iostream>
+# include <vector>
 # include <cstring>
 # include "parent.h"
 # include "music.h"
@@ -8,6 +9,9 @@ using namespace std;
 
 int main()
 {
+  vector<parent*> media;
+  //parent p;
+  while(true){
   bool works = false;
   while(works == false){
     char action[20];
@@ -22,13 +26,14 @@ int main()
 	cin >> type;
 
 	if(strcmp(type, "movie")==0){
+	  media.push_back(new movie());
 	  tf = true;
 	}else if (strcmp(type, "videogame")==0){
 	  tf = true;
 	}else if(strcmp(type, "music")==0){
 	  tf = true;
 	}else{
-	  cout << " That is not a valid option try again." << endl;
+	  cout << " That is not a valid option try 'movie,' 'videogame,' or 'music.' " << endl;
 	}
       }
       
@@ -37,16 +42,17 @@ int main()
     }else if(strcmp(action, "delete")==0){
       works = true;
     }else{
-      cout << "you failed. ";
+      cout << "you failed. Try 'add,' 'search,' or 'delete.' ";
     }
 
+  }
   }
   
   // parent* e = new parent();
   // cout << e->printInfo() << endl;
-    
+  /*
   movie m;
   m.printInfo();
-   
+  */
   return 0;
 }
