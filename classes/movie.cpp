@@ -9,8 +9,8 @@ movie::movie(){
   
 }
 
-void movie::printInfo(){
-  cout << endl << "whatis the moo V? ";
+void movie::addInfo(){
+  /*  cout << endl << "whatis the moo V? ";
   cin >> title;
   cout << endl << "who directed this moo V ";
   cin >> director;
@@ -21,5 +21,6 @@ void movie::printInfo(){
   cout << endl << "if you were to rate this moov E a wavlength, what would it be?(*10^-7 m) ";
   cin >> rating;
   cout << "The movie " << title << " is directed by " << director << ". It was made in " << year << ", is " << duration << " minutes long, and has a rating of " << rating;
-
+  */
+  cout << year;
 }

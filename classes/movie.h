@@ -6,12 +6,15 @@ using namespace std;
 
 
 class movie : public parent {
- public:
+ private:
   movie();
   char title[80];
   char director[80];
   int year;
   int duration; // or float?
   float rating;
-  void printInfo();
+public:
+  //addInfo(int y)
+  //:year(y){}
+  void addInfo();
 };

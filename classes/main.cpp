@@ -11,9 +11,10 @@ int main()
 {
   vector<parent*> media;
   //parent p;
-  while(true){
+  bool keepgoing = true;
+  while(keepgoing == true){
   bool works = false;
-  while(works == false){
+  //while(works == false){
     char action[20];
     cout << "What would you like to do? ";
     cin >> action;
@@ -26,11 +27,17 @@ int main()
 	cin >> type;
 
 	if(strcmp(type, "movie")==0){
-	  media.push_back(new movie());
+	  int year;
+	  cout << "What year is it? ";
+	  cin >> year;
+	  //movie m;
+	  //media.push_back(new movie(year));
 	  tf = true;
 	}else if (strcmp(type, "videogame")==0){
+	  media.push_back(new game());
 	  tf = true;
 	}else if(strcmp(type, "music")==0){
+	  media.push_back(new music());
 	  tf = true;
 	}else{
 	  cout << " That is not a valid option try 'movie,' 'videogame,' or 'music.' " << endl;
@@ -41,18 +48,23 @@ int main()
       works = true;
     }else if(strcmp(action, "delete")==0){
       works = true;
+    }else if(strcmp(action, "quit")==0){
+      keepgoing = false;
     }else{
-      cout << "you failed. Try 'add,' 'search,' or 'delete.' ";
+      cout << "you failed. Try 'add,' 'search,' 'delete,' or 'quit.' ";
     }
 
-  }
+    //  }
   }
   
   // parent* e = new parent();
   // cout << e->printInfo() << endl;
-  /*
-  movie m;
-  m.printInfo();
-  */
+
+  //  movie m;
+  //m.addInfo();
+
+  for (const auto& obj : media) {
+    cout << endl << endl << obj << endl;
+  }
   return 0;
 }
