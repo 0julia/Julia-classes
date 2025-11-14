@@ -13,7 +13,7 @@ void movie::printInfo(){
   cout << endl << "whatis the moo V? ";
   cin >> title;
   cout << endl << "who directed this moo V ";
-  cin >> director;
+cd classes  cin >> director;
   cout << endl << "Wat yr did this moov E kome out? ";
   cin >> year;
   cout << endl << "how long is this moo V?(in minutes) ";
