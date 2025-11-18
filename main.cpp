@@ -121,7 +121,7 @@ int main()
 	bool found = false;
 	while (it != media.end()){
 	  it = find_if(it, media.end(), [&](parent* obj){
-	    return obj->title== compare;
+	    return strcmp(obj->title, compare) == 0;
 	  });
 
 	  if(it !=media.end()){
@@ -140,7 +140,7 @@ int main()
       // if they want to search by year, go here
       else if (strcmp(isTitle, "year")==0){
 	char compare[80];
-	cout << "What is the title? ";
+	cout << "What is the year the media was released? ";
 	cin.ignore(); // clear leftover newline from previous input
 	cin.getline(compare, 80);
 
@@ -148,7 +148,7 @@ int main()
 	bool found = false;
 	while (it != media.end()){
 	  it = find_if(it, media.end(), [&](parent* obj){
-	    return obj->year == compare;
+	    return strcmp(obj->year, compare) == 0;
 	  });
 
 	  if(it !=media.end()){
@@ -186,7 +186,7 @@ int main()
 	bool found = false;
 	while (it != media.end()){
 	  it = find_if(it, media.end(), [&](parent* obj){
-	    return obj->title== compare;
+	    return strcmp(obj->title, compare) == 0;
 	  });
 
 	
@@ -221,7 +221,7 @@ int main()
 	bool found = false;
 	while (it != media.end()){
 	  it = find_if(it, media.end(), [&](parent* obj){
-	    return obj->year== compare;
+	    return strcmp(obj->year, compare) == 0;
 	  });
 	
 	  if(it !=media.end()){
